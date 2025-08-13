@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Personal Attendance Management</h1>
+
+    <form id="attendanceForm">
+        <select id="subject" required>
+            <option value="">Select Subject</option>
+            <option value="WT">Web Technology</option>
+            <option value="TOC">Theory of Computation</option>
+            <option value="AIML">AIML</option>
+            <option value="OS">Operating System</option>
+            <option value="ED">Entrepreneurship Devlopment</option>
+            <option value="ISE">Industrial Safety Engineering</option>
+        </select>
+        <input type="date" id="date" required>
+        <select id="status" required>
+            <option value="">Select Status</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Leave">Leave</option>
+        </select>
+        <button type="submit">Mark Attendance</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceList">
+            
+        </tbody>
+    </table>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
